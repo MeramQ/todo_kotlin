@@ -5,7 +5,7 @@
         <item name="colorPrimary">#121212</item>
         <item name="backgroundTint">#747474</item>
         <item name="android:backgroundTint">#303030</item>
-        <item name="android:textColor">#E0E1E0</item>
-        <item name="android:textColorHint">#D0D1D0</item>
+        <item name="android:textColor">#E0E0E0</item>
+        <item name="android:textColorHint">#A0A0A0</item>
     </style>
 </resources>
