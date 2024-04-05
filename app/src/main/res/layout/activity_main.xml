@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:ems="15"
-            android:hint="Wpisz rzeczy do zrobienia"
+            android:hint="@string/textFieldHint"
             android:inputType="text"
             android:textColorHint="?attr/android:textColorHint" />
 
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:backgroundTint="?attr/backgroundTint"
-                android:text="Wyczyść listę"
+                android:text="@string/clearButtonLabel"
                 android:textColor="?attr/android:textColor" />
 
             <Button
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:backgroundTint="?attr/backgroundTint"
-                android:text="Dodaj do listy"
+                android:text="@string/addButtonLabel"
                 android:textColor="?attr/android:textColor" />
 
         </LinearLayout>
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Rzeczy do zrobienia:"
+            android:text="@string/listLabel"
             android:textColor="?attr/android:textColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editText" />

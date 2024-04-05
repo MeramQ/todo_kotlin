@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TODO Kotlin</string>
+    <string name="textFieldHint">Wpisz rzeczy do zrobienia</string>
+    <string name="clearButtonLabel">Wyczyść listę</string>
+    <string name="addButtonLabel">Dodaj do listy</string>
+    <string name="listLabel">Rzeczy do zrobienia:</string>
 </resources>
