@@ -28,13 +28,19 @@ class ItemAdapter(private val items: ArrayList<String>, private val context: Con
         notifyItemRemoved(position)
     }
 
-    private fun saveList() {
+    fun saveList() {
         val sharedPreferences = context.getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val set = HashSet<String>()
         set.addAll(items)
         editor.putStringSet("list", set)
         editor.apply()
+    }
+
+    fun loadList() {
+        val sharedPreferences = context.getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
+        val set = sharedPreferences.getStringSet("list", HashSet())
+        items.addAll(set ?: emptySet())
     }
 
     inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
